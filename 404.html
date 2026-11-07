@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Página não encontrada</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236c8cff'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #070a11;
+      color: #e9edf5;
+      font-family: "Inter", system-ui, sans-serif;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      width: 520px; height: 520px;
+      border-radius: 50%;
+      filter: blur(110px);
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    body::before { background: #6c8cff; top: -160px; left: -140px; }
+    body::after  { background: #a855f7; bottom: -200px; right: -160px; }
+
+    .wrap { position: relative; z-index: 1; max-width: 520px; }
+    .code {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(5rem, 22vw, 9rem);
+      line-height: 1;
+      letter-spacing: -0.06em;
+      background: linear-gradient(120deg, #6c8cff, #a855f7 60%, #22d3ee);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h1 { font-family: "Space Grotesk", sans-serif; font-size: 1.35rem; margin-top: 8px; letter-spacing: -0.02em; }
+    p { color: #a4afc4; margin-top: 12px; font-size: 0.95rem; line-height: 1.65; }
+    .btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+    a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-size: 0.9rem; font-weight: 600;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .25s, border-color .2s;
+    }
+    a:hover { transform: translateY(-2px); }
+    .primary { background: linear-gradient(135deg, #6c8cff, #a855f7); color: #fff; box-shadow: 0 12px 32px -12px #6c8cff; }
+    .ghost { border: 1px solid rgba(255,255,255,.16); color: #e9edf5; background: rgba(255,255,255,.04); }
+    .ghost:hover { border-color: #6c8cff; }
+    code {
+      font-family: ui-monospace, monospace;
+      font-size: 0.82em;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 2px 6px; border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>Essa página não existe</h1>
+    <p>
+      O caminho que você tentou acessar não foi encontrado.<br />
+      Pode ser um link quebrado ou uma página que mudou de lugar.
+    </p>
+    <div class="btns">
+      <a class="primary" href="/">Voltar ao início</a>
+      <a class="ghost" href="javascript:history.back()">Página anterior</a>
+    </div>
+  </div>
+</body>
+</html>
