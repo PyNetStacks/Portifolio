@@ -7,16 +7,16 @@
    ========================================================================== */
 
 const PROFILE = {
-  name: "Seu Nome",
-  initials: "SN",                      // 2 letras para o logo do menu
+  name: "Vinicius Daniel Boni",
+  initials: "VB",                      // 2 letras para o logo do menu
   role: "Desenvolvedor Full Stack & Dados",
   tagline:
     "Construo aplicações web e soluções de dados que unem performance, " +
     "boa experiência e código limpo. Do banco de dados até a interface.",
   status: "Disponível para novos projetos",
-  location: "São Paulo, Brasil",
-  email: "seu.email@exemplo.com",
-  phone: "+55 (11) 90000-0000",        // deixe vazio "" para esconder
+  location: "Araraquara, São Paulo, Brasil",
+  email: "viniciusdanielboni@gmail.com",
+  phone: "+55 (16) 981425733",        // deixe vazio "" para esconder
   resumeUrl: "assets/curriculo.pdf",   // coloque o PDF nesta pasta
 
   // Textos que aparecem e desaparecem no hero
@@ -28,16 +28,16 @@ const PROFILE = {
   ],
 
   socials: [
-    { label: "GitHub",   icon: "github",   url: "https://github.com/seu-usuario" },
-    { label: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/in/seu-usuario" },
-    { label: "E-mail",   icon: "mail",     url: "mailto:seu.email@exemplo.com" }
+    { label: "GitHub",   icon: "github",   url: "https://github.com/PyNetStacks" },
+    { label: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/vinicius-daniel-boni-78bb9b445/" },
+    { label: "E-mail",   icon: "mail",     url: "mailto:viniciusdanielboni@gmail.com" }
   ]
 };
 
 /* ---------------------------------------------------------------- SOBRE --- */
 const ABOUT = {
   paragraphs: [
-    "Sou desenvolvedor com foco em <strong>aplicações web</strong> e <strong>engenharia de dados</strong>. " +
+    "Sou desenvolvedor com foco em <strong>redes web</strong> e <strong>cibersegurança</strong>. " +
       "Gosto de problemas que exigem pensar no todo: modelagem, performance, " +
       "experiência do usuário e manutenção a longo prazo.",
 
@@ -49,10 +49,10 @@ const ABOUT = {
       "open source e escrever sobre o que aprendo."
   ],
   facts: [
-    { label: "Localização", value: "São Paulo, BR" },
+    { label: "Localização", value: "Araraquara, São Paulo, BR" },
     { label: "Foco atual", value: "Full Stack + Dados" },
     { label: "Experiência", value: "3+ anos" },
-    { label: "Inglês", value: "Intermediário / Avançado" },
+    { label: "Inglês", value: "Intermediário" },
     { label: "Disponibilidade", value: "Remoto / Híbrido" }
   ]
 };
@@ -60,8 +60,8 @@ const ABOUT = {
 /* --------------------------------------------------------------- STATS --- */
 const STATS = [
   { value: 12,  suffix: "+", label: "Projetos entregues" },
-  { value: 3,   suffix: "+", label: "Anos de experiência" },
-  { value: 8,   suffix: "",  label: "Tecnologias dominadas" },
+  { value: 2,   suffix: "+", label: "Anos de experiência" },
+  { value: 4,   suffix: "",  label: "Tecnologias dominadas" },
   { value: 100, suffix: "%", label: "Dedicação" }
 ];
 
@@ -128,7 +128,7 @@ const PROJECTS = [
     featured: true,
     gradient: "linear-gradient(135deg,#6c8cff,#a855f7)",
     emoji: "📊",
-    links: { demo: "https://exemplo.com", code: "https://github.com/seu-usuario" }
+    links: { demo: "https://exemplo.com", code: "https://github.com/PyNetStacks" }
   },
   {
     title: "API de Gestão de Tarefas",
@@ -193,46 +193,28 @@ const PROJECTS = [
 const TIMELINE = [
   {
     type: "work",
-    period: "2024 — Atual",
+    period: "2025 — Atual",
     title: "Desenvolvedor Full Stack",
-    org: "Nome da Empresa",
+    org: "Empresa propria",
     description:
       "Desenvolvimento de aplicações web internas, integração de APIs e " +
-      "otimização de consultas no banco de dados.",
-    bullets: [
-      "Reduzi o tempo de carregamento do painel principal em 40%",
-      "Implementei autenticação e controle de permissões por perfil",
-      "Atuei na migração do front-end para React + TypeScript"
-    ]
-  },
-  {
-    type: "work",
-    period: "2023 — 2024",
-    title: "Analista de Dados (Jr)",
-    org: "Nome da Empresa",
-    description:
-      "Construção de dashboards, modelagem de indicadores e automatização " +
-      "de relatórios recorrentes.",
-    bullets: [
-      "Automatizei relatórios que consumiam ~10h semanais",
-      "Modelei 20+ indicadores de negócio no BI",
-      "Documentei processos de coleta e tratamento de dados"
+      "otimização de consultas no banco de dados."
     ]
   },
   {
     type: "education",
-    period: "2021 — 2025",
-    title: "Bacharelado em ...",
-    org: "Nome da Universidade",
-    description: "Foco em algoritmos, estruturas de dados e engenharia de software."
+    period: "2025-atual",
+    title: "Certificação em Tecnico em Inoformatica",
+    org: "Instituto Federal de São Paulo - Campus Araraquara",
+    description: "Ensino médio integrado com tecnico"
   },
-  {
+   {
     type: "education",
-    period: "2023",
-    title: "Certificação em ...",
-    org: "Instituição / Plataforma",
-    description: "Curso de aprofundamento com projeto prático final."
-  }
+    period: "2026",
+    title: "Certificação em Redes",
+    org: "CISCO",
+    description: "Curso de Redes feito e oferecido pela CISCO Academy"
+  },
 ];
 
 /* ------------------------------------------------------------- CONTATO --- */
